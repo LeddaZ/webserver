@@ -1,3 +1,4 @@
+/* Importa il font "Rubik" da Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
 
 * {
@@ -14,100 +15,28 @@ body {
 img {
     max-width: 90%;
     margin: auto;
-    display: inline-block;
     vertical-align: top;
-}
-
-.personaggi img {
-    max-width: 20%;
-    padding: 10px;
-}
-
-.personaggi img:hover {
-    animation: glow 0.7s infinite alternate;
-    border-radius: 20px;
-}
-
-@keyframes glow {
-    from {
-      box-shadow: 0 0 10px -10px black;
-    }
-    to {
-      box-shadow: 0 0 10px 10px yellow;
-    }
-  }
-
-
-.gruppo {
-    size: 200%;
-    border-radius: 20px;
-}
-
-@media only screen and (max-width: 800px) {
-    img {
-        max-width: 60%;
-    }
 }
 
 header {
     padding: 15px;
 }
 
-h1 {
-    text-align: center;
+footer {
+    padding: 20px;
+    position: relative;
 }
 
-.gruppo {
-    display: block;
-    margin: auto;
-    float: left;
-    padding: 15px;
+footer a, .box img {
+    padding: 10px;
+}
+
+footer p, h1, .box p, .titolo, .titoloGrande, .container, .navbar a {
+    text-align: center;
 }
 
 p {
     text-align: justify;
-}
-
-.sfondo {
-	background-image: url("../immagini/logo.png");
-	background-repeat: no-repeat;
-	background-position: center;
-	background-attachment: fixed;	
-}
-
-.titolo {
-    text-align: center;
-    font-size: 32px;
-}
-
-.titoloGrande {
-    text-align: center;
-    font-size: 40px;
-}
-
-.container {
-    background-color: rgb(24, 21, 21, 0.8);
-    text-align: center;
-    box-sizing: border-box;
-}
-
-.testo {
-    font-size: 18px;
-    padding-right: 15px;
-    padding-left: 15px;
-}
-
-footer {
-    padding: 15px;
-    position: relative;
-}
-
-footer a {
-    padding: 10px;
-}
-
-footer p {
-    text-align: center;
 }
 
 a:hover {
@@ -118,6 +47,72 @@ a {
     text-decoration: none;
 }
 
+/* Animazione */
+@keyframes glow {
+    from {
+      box-shadow: 0 0 10px -10px black;
+    }
+    to {
+      box-shadow: 0 0 10px 10px yellow;
+    }
+}
+
+/* Mostra l'animazione quando si passa sopra il box con immagine e nome del personaggio */
+.box:hover{
+    animation: glow 0.7s infinite alternate;
+}
+
+.box, .gruppo {
+    border-radius: 20px;
+}
+
+.box {
+    width: 20%;
+    display: inline-block;
+}
+
+.box p {
+    padding: 5px;
+}
+
+.gruppo {
+    size: 200%;
+}
+
+.gruppo {
+    display: block;
+    margin: auto;
+    float: left;
+    padding: 15px;
+}
+
+.sfondo {
+	background-image: url("../immagini/logo.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;	
+}
+
+.titolo {
+    font-size: 32px;
+}
+
+.titoloGrande {
+    font-size: 40px;
+}
+
+.container {
+    background-color: rgb(24, 21, 21, 0.8);
+    box-sizing: border-box;
+}
+
+.testo {
+    font-size: 18px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+/* Menu laterale */
 .navbar {
     overflow: hidden;
 }
@@ -125,7 +120,6 @@ a {
 .navbar a {
     float: right;
     font-size: 16px;
-    text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
@@ -169,4 +163,17 @@ a {
 
 .pulsante:hover {
       color: yellow;
+}
+
+/* Responsive */
+@media only screen and (max-width: 800px) {
+    img {
+        max-width: 70%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    img {
+        max-width: 60%;
+    }
 }
