@@ -5,6 +5,7 @@
     color: white;
     font-family: 'Rubik', sans-serif;
     text-shadow: 2px 2px 2px black;
+    cursor: url("../immagini/puntatore.png"), auto;
 }
 
 body {
@@ -14,7 +15,6 @@ body {
 
 img {
     max-width: 90%;
-    margin: auto;
     vertical-align: top;
 }
 
@@ -67,7 +67,7 @@ a {
 }
 
 .box {
-    width: 20%;
+    max-width: 20%;
     display: inline-block;
 }
 
@@ -77,11 +77,7 @@ a {
 
 .gruppo {
     size: 200%;
-}
-
-.gruppo {
     display: block;
-    margin: auto;
     float: left;
     padding: 15px;
 }
@@ -108,8 +104,7 @@ a {
 
 .testo {
     font-size: 18px;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding: 0px 15px 0px 15px;
 }
 
 /* Menu laterale */
@@ -170,10 +165,16 @@ a {
     img {
         max-width: 70%;
     }
+    .box {
+        max-width: 30%;
+    }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 600px) {
     img {
         max-width: 60%;
+    }
+    .box {
+        max-width: 40%;
     }
 }
