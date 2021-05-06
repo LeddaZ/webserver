@@ -31,12 +31,24 @@ footer a, .box img {
     padding: 10px;
 }
 
+footer a {
+    font-size: 20px;
+}
+
+footer p {
+    font-size: 18px;
+}
+
 footer p, h1, .box p, .titolo, .titoloGrande, .container, .navbar a {
     text-align: center;
 }
 
 p {
     text-align: justify;
+}
+
+div.box p {
+    font-size: 18px;
 }
 
 a:hover {
@@ -103,7 +115,7 @@ a {
 }
 
 .testo {
-    font-size: 18px;
+    font-size: 20px;
     padding: 0px 15px 0px 15px;
 }
 
