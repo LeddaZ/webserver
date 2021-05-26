@@ -18,6 +18,12 @@ img {
     vertical-align: top;
 }
 
+img.personaggi {
+    max-width: 70%;
+    padding: 15px;
+    float: left;
+}
+
 header {
     padding: 15px;
 }
@@ -39,7 +45,7 @@ footer p {
     font-size: 18px;
 }
 
-footer p, h1, .box p, .titolo, .titoloGrande, .container, .navbar a {
+footer p, h1, .titolo, .titoloGrande, .container, .navbar a {
     text-align: center;
 }
 
@@ -47,43 +53,47 @@ p {
     text-align: justify;
 }
 
-div.box p {
-    font-size: 18px;
-}
-
 a:hover {
     color: yellow;
 }
 
-a {
+a, h3 {
     text-decoration: none;
 }
 
-/* Animazione */
-@keyframes glow {
-    from {
-      box-shadow: 0 0 10px -10px black;
-    }
-    to {
-      box-shadow: 0 0 10px 10px yellow;
-    }
+section#personaggi {
+    display: inline-block;
 }
 
-/* Mostra l'animazione quando si passa sopra il box con immagine e nome del personaggio */
-.box:hover{
-    animation: glow 0.7s infinite alternate;
+/* Mostra il contorno quando si passa sopra il box */
+.box:hover, .boxAP:hover {
+    box-shadow: 0 0 10px 10px yellow;
 }
 
-.box, .gruppo {
+.box, .boxAP, .gruppo {
     border-radius: 20px;
 }
 
 .box {
     max-width: 20%;
     display: inline-block;
+    transition: all 0.5s ease;
+    padding: 5px;
 }
 
-.box p {
+.boxAP {
+    max-width: 12%;
+    display: inline-block;
+    transition: all 0.5s ease;
+    padding: 5px;
+}
+
+.personaggio {
+    max-width: 20%;
+    padding: 15px;
+}
+
+.box h3 {
     padding: 5px;
 }
 
@@ -180,13 +190,26 @@ a {
     .box {
         max-width: 30%;
     }
+    .boxAP {
+        max-width: 20%;
+    }
 }
 
 @media only screen and (max-width: 600px) {
     img {
         max-width: 60%;
     }
+    .personaggio {
+        max-width: 80%;
+        display: inline-block;
+    }
+    img.personaggi {
+        float: none;
+    }
     .box {
+        max-width: 40%;
+    }
+    .boxAP {
         max-width: 40%;
     }
 }
