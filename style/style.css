@@ -21,15 +21,16 @@ h1 {
 }
 
 ul.foot > li {
-    display: inline-block;
-    padding: 5px 10px 5px 10px;
-}
-
-ul {
-    padding: 0px;
+    display: inline;
 }
 
 a {
     color: rgb(0, 255, 174);
     text-decoration: none;
+}
+
+img.logo {
+    height: 65px;
+    width: 65px;
+    filter: drop-shadow(3px 3px 3px black);
 }
