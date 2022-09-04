@@ -1,9 +1,13 @@
-# File: .github/workflows/refresh.yml
 name: Refresh
 
 on:
-  schedule:
-    - cron:  '0 3 * * *' # Runs every day at 3am
+  workflow_dispatch:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
 
 jobs:
   refresh:
@@ -15,6 +19,4 @@ jobs:
             --url https://api.github.com/repos/${{ github.repository }}/pages/builds \
             --header "Authorization: Bearer $USER_TOKEN"
         env:
-          # You must create a personal token with repo access as GitHub does
-          # not yet support server-to-server page builds.
           USER_TOKEN: ${{ secrets.USER_TOKEN }}
