@@ -21,8 +21,12 @@ h1 {
     font-size: 44px;
 }
 
+ul {
+    padding: 0px;
+}
+
 ul.foot > li {
-    display: inline;
+    display: inline-block;
 }
 
 a {
