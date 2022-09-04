@@ -2,18 +2,22 @@
 
 * {
     font-family: 'Inter', 'sans-serif';
-    text-shadow: 1px 1px 1px black;
+    text-shadow: 2px 2px 2px black;
     text-align: center;
 }
 
-h1 {
-    font-size: 44px;
+html {
+    background: linear-gradient(145deg, rgba(255,163,0,1) 0%, rgb(171, 109, 0) 25%, rgb(113, 72, 0) 50%, rgb(75, 46, 0) 75%);
+    height:100%;
 }
 
 body {
     font-size: 18px;
-    background-color: #131315;
     color: white;
+}
+
+h1 {
+    font-size: 44px;
 }
 
 ul.foot > li {
@@ -27,4 +31,5 @@ ul {
 
 a {
     color: rgb(225, 225, 0);
+    text-decoration: none;
 }
