@@ -7,7 +7,7 @@
 }
 
 html {
-    background: linear-gradient(145deg, rgba(255,163,0,1) 0%, rgb(171, 109, 0) 25%, rgb(113, 72, 0) 50%, rgb(75, 46, 0) 75%);
+    background: linear-gradient(145deg, rgb(50, 0, 96) 0%, rgb(67, 46, 12) 25%, rgb(4, 60, 7) 50%, rgb(86, 0, 12) 75%);
     height:100%;
 }
 
@@ -30,6 +30,6 @@ ul {
 }
 
 a {
-    color: rgb(225, 225, 0);
+    color: rgb(0, 255, 174);
     text-decoration: none;
 }
