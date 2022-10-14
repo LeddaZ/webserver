@@ -32,6 +32,7 @@ ul.foot > li {
 
 a {
     color: rgb(255, 230, 0);
+    font-weight: bold;
     text-decoration: none;
 }
 
