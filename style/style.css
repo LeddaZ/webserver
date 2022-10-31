@@ -7,9 +7,7 @@
 }
 
 html {
-    background-color: #21D4FD;
-    background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
-    background-attachment: fixed;
+    background-color: #101010;
     height:100%;
 }
 
@@ -31,7 +29,7 @@ ul.foot > li {
 }
 
 a {
-    color: rgb(255, 230, 0);
+    color: rgb(0, 255, 85);
     font-weight: bold;
     text-decoration: none;
 }
